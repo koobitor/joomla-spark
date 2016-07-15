@@ -152,8 +152,6 @@ repository. In most cases this will be the GPLv2 or later license.
 
 ## Code of Conduct 
 
-The community is one of the best features of Joomla, and we want to ensure it remains welcoming and safe for everyone. We have adopted the [Open Code of Conduct](http://todogroup.org/opencodeofconduct/#Joomladevelopers/contact@joomladevelopers.xyz) for all projects in the [@joomladevelopers GitHub organization](http://www.github.com/joomladevelopers), and our [gitter chat room](https://gitter.im/joomladevelopers/chat). 
+The community is one of the best features of Joomla, and we want to ensure it remains welcoming and safe for everyone.We have adopted the [Contributor Convenant](http://contributor-covenant.org/) for all projects in the [@joomladevelopers GitHub organization](http://www.github.com/joomladevelopers), and our [gitter chat room](https://gitter.im/joomladevelopers/chat). 
 
 This code of conduct outlines the expectations for all community members, as well as steps to report unacceptable behavior. We are committed to providing a welcoming and inspiring community for all and expect our code of conduct to be honored.
-
-Read more about the Open Code of Conduct on the [TODO Group blog](http://todogroup.org/blog/open-code-of-conduct/).
