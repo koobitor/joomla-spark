@@ -20,7 +20,6 @@ UPDATE `#__extensions` SET protected = 0 WHERE
 `name` = 'mod_articles_latest' OR
 `name` = 'mod_banners' OR
 `name` = 'mod_feed' OR
-`name` = 'mod_footer' OR
 `name` = 'mod_users_latest' OR
 `name` = 'mod_articles_category' OR
 `name` = 'mod_articles_categories' OR
