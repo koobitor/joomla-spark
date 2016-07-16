@@ -2123,11 +2123,6 @@ input:-webkit-autofill {
 	background-color: #163365 !important;
 }
 
-/* -- Codemirror Editor  ----------- */
-div.editor-border, div.CodeMirror-wrapping {
-	border: 1px solid #163365;
-	background-color: #ffffff;
-}
 
 /* User Notes */
 div.unotes h1 {

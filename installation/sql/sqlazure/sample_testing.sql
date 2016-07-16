@@ -388,7 +388,6 @@ INSERT [#__content] ([id], [asset_id], [title], [alias], [introtext], [fulltext]
 INSERT [#__content] ([id], [asset_id], [title], [alias], [introtext], [fulltext], [state], [catid], [created], [created_by], [created_by_alias], [modified], [modified_by], [checked_out], [checked_out_time], [publish_up], [publish_down], [images], [urls], [attribs], [version], [ordering], [metakey], [metadesc], [access], [hits], [metadata], [featured], [language], [xreference]) VALUES (14, 112, 'Editors', 'editors', '<p>Editors are used thoughout Joomla! where content is created. TinyMCE is the default choice in most locations although CodeMirror is used in the template manager. No Editor provides a text box for html content.</p>
 <p>Default on:</p>
 <ul>
-<li>CodeMirror <a href="https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit#Editor_-_CodeMirror">Help</a></li>
 <li>TinyMCE<a href="https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit#Editor_-_TinyMCE"> Help</a></li>
 <li>No Editor <a href="https://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help31:Extensions_Plugin_Manager_Edit#Editor_-_None">Help</a></li>
 </ul>

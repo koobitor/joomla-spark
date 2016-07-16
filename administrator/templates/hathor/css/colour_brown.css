@@ -1760,9 +1760,6 @@ table.adminlist tbody td.check-d {
 	margin: 0;
 	padding: 0;
 }
-div.CodeMirror-wrapping {
-	border: 1px solid #000000;
-}
 table.adminform tr.row0 {
 	background-color: #ffffff;
 }

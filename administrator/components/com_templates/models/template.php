@@ -371,8 +371,7 @@ class TemplatesModelTemplate extends JModelForm
 			->select('COUNT(*)')
 			->from('#__extensions as a')
 			->where(
-				'(a.name =' . $db->quote('plg_editors_codemirror') .
-				' AND a.enabled = 1) OR (a.name =' .
+				'(a.name =' .
 				$db->quote('plg_editors_none') .
 				' AND a.enabled = 1)'
 			);
