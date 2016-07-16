@@ -330,12 +330,5 @@ class JApplicationSiteTest extends TestCaseDatabase
 	 */
 	public function testSetTemplate()
 	{
-		$this->class->setTemplate('beez3');
-
-		$template = $this->class->getTemplate(true);
-
-		$this->assertInstanceOf('\\Joomla\\Registry\\Registry', $template->params);
-
-		$this->assertEquals('beez3', $template->template);
 	}
 }
