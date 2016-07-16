@@ -22,7 +22,6 @@ INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (10, 1, 300, 301, 1, 'com_installer', 'com_installer', '{"core.admin":[],"core.manage":{"7":0},"core.delete":{"7":0},"core.edit.state":{"7":0}}');
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (11, 1, 302, 303, 1, 'com_languages', 'com_languages', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (12, 1, 304, 305, 1, 'com_login', 'com_login', '{}');
-INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (13, 1, 306, 307, 1, 'com_mailto', 'com_mailto', '{}');
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (14, 1, 308, 309, 1, 'com_massmail', 'com_massmail', '{}');
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (15, 1, 310, 311, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1},"core.edit":[],"core.edit.state":[]}');
 INSERT [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES (16, 1, 312, 313, 1, 'com_menus', 'com_menus', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
