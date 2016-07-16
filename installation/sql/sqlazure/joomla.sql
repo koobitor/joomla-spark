@@ -58,8 +58,6 @@ SELECT 11, 1, 25, 26, 1, 'com_languages', 'com_languages', '{"core.admin":{"7":1
 UNION ALL
 SELECT 12, 1, 27, 28, 1, 'com_login', 'com_login', '{}'
 UNION ALL
-SELECT 13, 1, 29, 30, 1, 'com_mailto', 'com_mailto', '{}'
-UNION ALL
 SELECT 14, 1, 31, 32, 1, 'com_massmail', 'com_massmail', '{}'
 UNION ALL
 SELECT 15, 1, 33, 34, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}'
@@ -745,8 +743,6 @@ CREATE NONCLUSTERED INDEX [extension] ON [#__extensions]
 SET IDENTITY_INSERT [#__extensions]  ON;
 
 INSERT [#__extensions] ([extension_id], [name], [type], [element], [folder], [client_id], [enabled], [access], [protected], [manifest_cache], [params], [custom_data], [system_data], [checked_out], [checked_out_time], [ordering], [state])
-SELECT 1, 'com_mailto', 'component', 'com_mailto', '', 0, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 2, 'com_wrapper', 'component', 'com_wrapper', '', 0, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 3, 'com_admin', 'component', 'com_admin', '', 1, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
