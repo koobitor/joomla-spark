@@ -264,7 +264,6 @@ class JoomlaInstallerScript
 			array('module', 'mod_search', '', 0),
 			array('module', 'mod_stats', '', 0),
 			array('module', 'mod_syndicate', '', 0),
-			array('module', 'mod_users_latest', '', 0),
 			array('module', 'mod_wrapper', '', 0),
 			array('module', 'mod_articles_category', '', 0),
 			array('module', 'mod_articles_categories', '', 0),
