@@ -249,16 +249,6 @@
 			<value>com_weblinks</value>
 			<value>{&quot;core.admin&quot;:{&quot;7&quot;:1},&quot;core.manage&quot;:{&quot;6&quot;:1},&quot;core.create&quot;:[],&quot;core.delete&quot;:[],&quot;core.edit&quot;:[],&quot;core.edit.state&quot;:[]}</value>
 		</row>
-		<row>
-			<value>26</value>
-			<value>1</value>
-			<value>76</value>
-			<value>77</value>
-			<value>1</value>
-			<value>com_wrapper</value>
-			<value>com_wrapper</value>
-			<value>{}</value>
-		</row>
 	</table>
 	<table name="jos_banner_clients">
 		<column>id</column>
@@ -492,25 +482,6 @@
 		<column>checked_out_time</column>
 		<column>ordering</column>
 		<column>state</column>
-		<row>
-			<value>2</value>
-			<value>Wrapper</value>
-			<value>component</value>
-			<value>com_wrapper</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
 		<row>
 			<value>3</value>
 			<value>Admin</value>
@@ -1313,25 +1284,6 @@
 			<value>47</value>
 			<value>Who's Online</value>
 			<value>module</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>48</value>
-			<value>Wrapper</value>
-			<value>module</value>
-			<value>mod_wrapper</value>
 			<value></value>
 			<value>0</value>
 			<value>1</value>
