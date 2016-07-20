@@ -1,25 +1,25 @@
 <?php
 /**
  * @package     Joomla.Platform
- * @subpackage  Facebook
+ * @subpackage  Linkedin
  *
  * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-defined('JPATH_PLATFORM') or die;
+defined('JPATH_PLATFORM') or die();
 
 use Joomla\Registry\Registry;
 
 /**
- * Joomla Platform class for interacting with a Facebook API instance.
+ * Joomla Platform class for interacting with a Linkedin API instance.
  *
  * @since  13.1
  */
-class JFacebook
+class JLinkedin
 {
 	/**
-	 * @var    Registry  Options for the Facebook object.
+	 * @var    Registry  Options for the Linkedin object.
 	 * @since  13.1
 	 */
 	protected $options;
@@ -31,100 +31,64 @@ class JFacebook
 	protected $client;
 
 	/**
-	 * @var    JFacebookOAuth  The OAuth client.
-	 * @since  13.1
+	 * @var JLinkedinOAuth The OAuth client.
+	 * @since 13.1
 	 */
 	protected $oauth;
 
 	/**
-	 * @var    JFacebookUser  Facebook API object for user.
+	 * @var    JLinkedinPeople  Linkedin API object for people.
 	 * @since  13.1
 	 */
-	protected $user;
+	protected $people;
 
 	/**
-	 * @var    JFacebookStatus  Facebook API object for status.
+	 * @var    JLinkedinGroups  Linkedin API object for groups.
 	 * @since  13.1
 	 */
-	protected $status;
+	protected $groups;
 
 	/**
-	 * @var    JFacebookCheckin  Facebook API object for checkin.
+	 * @var    JLinkedinCompanies  Linkedin API object for companies.
 	 * @since  13.1
 	 */
-	protected $checkin;
+	protected $companies;
 
 	/**
-	 * @var    JFacebookEvent  Facebook API object for event.
+	 * @var    JLinkedinJobs  Linkedin API object for jobs.
 	 * @since  13.1
 	 */
-	protected $event;
+	protected $jobs;
 
 	/**
-	 * @var    JFacebookGroup  Facebook API object for group.
+	 * @var    JLinkedinStream  Linkedin API object for social stream.
 	 * @since  13.1
 	 */
-	protected $group;
+	protected $stream;
 
 	/**
-	 * @var    JFacebookLink  Facebook API object for link.
+	 * @var    JLinkedinCommunications  Linkedin API object for communications.
 	 * @since  13.1
 	 */
-	protected $link;
-
-	/**
-	 * @var    JFacebookNote  Facebook API object for note.
-	 * @since  13.1
-	 */
-	protected $note;
-
-	/**
-	 * @var    JFacebookPost  Facebook API object for post.
-	 * @since  13.1
-	 */
-	protected $post;
-
-	/**
-	 * @var    JFacebookComment  Facebook API object for comment.
-	 * @since  13.1
-	 */
-	protected $comment;
-
-	/**
-	 * @var    JFacebookPhoto  Facebook API object for photo.
-	 * @since  13.1
-	 */
-	protected $photo;
-
-	/**
-	 * @var    JFacebookVideo  Facebook API object for video.
-	 * @since  13.1
-	 */
-	protected $video;
-
-	/**
-	 * @var    JFacebookAlbum  Facebook API object for album.
-	 * @since  13.1
-	 */
-	protected $album;
+	protected $communications;
 
 	/**
 	 * Constructor.
 	 *
-	 * @param   JFacebookOAuth  $oauth    OAuth client.
-	 * @param   Registry        $options  Facebook options object.
+	 * @param   JLinkedinOauth  $oauth    OAuth object
+	 * @param   Registry        $options  Linkedin options object.
 	 * @param   JHttp           $client   The HTTP client object.
 	 *
 	 * @since   13.1
 	 */
-	public function __construct(JFacebookOAuth $oauth = null, Registry $options = null, JHttp $client = null)
+	public function __construct(JLinkedinOauth $oauth = null, Registry $options = null, JHttp $client = null)
 	{
 		$this->oauth = $oauth;
 		$this->options = isset($options) ? $options : new Registry;
 		$this->client  = isset($client) ? $client : new JHttp($this->options);
 
 		// Setup the default API url if not already set.
-		$this->options->def('api.url', 'https://graph.facebook.com/');
+		$this->options->def('api.url', 'https://api.linkedin.com');
 	}
 
 	/**
@@ -132,14 +96,14 @@ class JFacebook
 	 *
 	 * @param   string  $name  Name of property to retrieve
 	 *
-	 * @return  JFacebookObject  Facebook API object (status, user, friends etc).
+	 * @return  JLinkedinObject  Linkedin API object (statuses, users, favorites, etc.).
 	 *
 	 * @since   13.1
 	 * @throws  InvalidArgumentException
 	 */
 	public function __get($name)
 	{
-		$class = 'JFacebook' . ucfirst($name);
+		$class = 'JLinkedin' . ucfirst($name);
 
 		if (class_exists($class))
 		{
@@ -155,7 +119,7 @@ class JFacebook
 	}
 
 	/**
-	 * Get an option from the JFacebook instance.
+	 * Get an option from the JLinkedin instance.
 	 *
 	 * @param   string  $key  The name of the option to get.
 	 *
@@ -169,12 +133,12 @@ class JFacebook
 	}
 
 	/**
-	 * Set an option for the JFacebook instance.
+	 * Set an option for the Linkedin instance.
 	 *
 	 * @param   string  $key    The name of the option to set.
 	 * @param   mixed   $value  The option value to set.
 	 *
-	 * @return  JFacebook  This object for method chaining.
+	 * @return  JLinkedin  This object for method chaining.
 	 *
 	 * @since   13.1
 	 */
