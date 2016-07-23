@@ -176,29 +176,6 @@
 			</field>
 	</fieldset>
 
- 	<fieldset
-		name="massmail"
-		label="COM_USERS_MASS_MAIL"
-		description="COM_USERS_MASS_MAIL_DESC">
-
-		<field
- 			name="mailSubjectPrefix"
- 			type="text"
-			label="COM_USERS_CONFIG_FIELD_SUBJECT_PREFIX_LABEL"
-			description="COM_USERS_CONFIG_FIELD_SUBJECT_PREFIX_DESC"
-		/>
-
- 		<field
- 			name="mailBodySuffix"
-			type="textarea"
- 			rows="5"
- 			cols="30"
-			label="COM_USERS_CONFIG_FIELD_MAILBODY_SUFFIX_LABEL"
-			description="COM_USERS_CONFIG_FIELD_MAILBODY_SUFFIX_DESC"
-		/>
-
-	</fieldset>
-
 	<fieldset
 		name="permissions"
 		label="JCONFIG_PERMISSIONS_LABEL"

@@ -1284,7 +1284,6 @@ class JoomlaInstallerScript
 			'/administrator/help/en-GB/Users_Debug_Users.html',
 			'/administrator/help/en-GB/Users_Groups.html',
 			'/administrator/help/en-GB/Users_Groups_Edit.html',
-			'/administrator/help/en-GB/Users_Mass_Mail_Users.html',
 			'/administrator/help/en-GB/Users_User_Manager.html',
 			'/administrator/help/en-GB/Users_User_Manager_Edit.html',
 			'/administrator/components/com_config/views/index.html',

@@ -42,58 +42,6 @@ class JHtmlUsers
 	}
 
 	/**
-	 * Displays a note icon.
-	 *
-	 * @param   integer  $count   The number of notes for the user
-	 * @param   integer  $userId  The user ID
-	 *
-	 * @return  string  A link to a modal window with the user notes
-	 *
-	 * @since   2.5
-	 */
-	public static function notes($count, $userId)
-	{
-	}
-
-	/**
-	 * Renders the modal html.
-	 *
-	 * @param   integer  $count   The number of notes for the user
-	 * @param   integer  $userId  The user ID
-	 *
-	 * @return  string   The html for the rendered modal
-	 *
-	 * @since   3.4.1
-	*/
-	public static function notesModal($count, $userId)
-	{
-		if (empty($count))
-		{
-			return '';
-		}
-
-		$title = JText::plural('COM_USERS_N_USER_NOTES', $count);
-		$footer = '<button type="button" class="btn" data-dismiss="modal" aria-hidden="true">'
-			. JText::_('JTOOLBAR_CLOSE') . '</button>';
-
-		return JHtml::_(
-			'bootstrap.renderModal',
-			'userModal_' . (int) $userId,
-			array(
-				'title' => $title,
-				'backdrop' => 'static',
-				'keyboard' => true,
-				'closeButton' => true,
-				'footer' => $footer,
-				'url' => JRoute::_('index.php?option=com_users&view=notes&tmpl=component&layout=modal&filter[user_id]=' . (int) $userId),
-				'height' => '300px',
-				'width' => '800px'
-			)
-		);
-
-	}
-
-	/**
 	 * Build an array of block/unblock user states to be used by jgrid.state,
 	 * State options will be different for any user
 	 * and for currently logged in user
