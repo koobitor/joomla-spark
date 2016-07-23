@@ -42,46 +42,6 @@ class JHtmlUsers
 	}
 
 	/**
-	 * Displays an icon to add a note for this user.
-	 *
-	 * @param   integer  $userId  The user ID
-	 *
-	 * @return  string  A link to add a note
-	 *
-	 * @since   2.5
-	 */
-	public static function addNote($userId)
-	{
-		$title = JText::_('COM_USERS_ADD_NOTE');
-
-		return '<a href="' . JRoute::_('index.php?option=com_users&task=note.add&u_id=' . (int) $userId) . '" class="hasTooltip btn btn-mini" title="'
-			. $title . '"><span class="icon-vcard"></span><span class="hidden-phone">' . $title . '</span></a>';
-	}
-
-	/**
-	 * Displays an icon to filter the notes list on this user.
-	 *
-	 * @param   integer  $count   The number of notes for the user
-	 * @param   integer  $userId  The user ID
-	 *
-	 * @return  string  A link to apply a filter
-	 *
-	 * @since   2.5
-	 */
-	public static function filterNotes($count, $userId)
-	{
-		if (empty($count))
-		{
-			return '';
-		}
-
-		$title = JText::_('COM_USERS_FILTER_NOTES');
-
-		return '<a href="' . JRoute::_('index.php?option=com_users&view=notes&filter[search]=uid:' . (int) $userId)
-			. '" class="hasTooltip btn btn-mini" title="' . $title . '"><span class="icon-filter"></span></a>';
-	}
-
-	/**
 	 * Displays a note icon.
 	 *
 	 * @param   integer  $count   The number of notes for the user
@@ -93,15 +53,6 @@ class JHtmlUsers
 	 */
 	public static function notes($count, $userId)
 	{
-		if (empty($count))
-		{
-			return '';
-		}
-
-		$title = JText::plural('COM_USERS_N_USER_NOTES', $count);
-
-		return '<a href="#userModal_' . (int) $userId . '" id="modal-' . (int) $userId . '" data-toggle="modal" class="hasTooltip btn btn-mini" title="'
-			. $title . '"><span class="icon-drawer-2"></span><span class="hidden-phone">' . $title . '</span></a>';
 	}
 
 	/**
