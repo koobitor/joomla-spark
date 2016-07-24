@@ -43,7 +43,6 @@
 		<filename>en-GB.com_languages.sys.ini</filename>
 		<filename>en-GB.com_login.ini</filename>
 		<filename>en-GB.com_login.sys.ini</filename>
-		<filename>en-GB.com_mailto.sys.ini</filename>
 		<filename>en-GB.com_media.ini</filename>
 		<filename>en-GB.com_media.sys.ini</filename>
 		<filename>en-GB.com_menus.ini</filename>
@@ -70,8 +69,6 @@
 		<filename>en-GB.com_users.sys.ini</filename>
 		<filename>en-GB.com_weblinks.ini</filename>
 		<filename>en-GB.com_weblinks.sys.ini</filename>
-		<filename>en-GB.com_wrapper.ini</filename>
-		<filename>en-GB.com_wrapper.sys.ini</filename>
 		<filename>en-GB.ini</filename>
 		<filename>en-GB.lib_joomla.ini</filename>
 		<filename>en-GB.localise.php</filename>
@@ -103,8 +100,6 @@
 		<filename>en-GB.mod_title.sys.ini</filename>
 		<filename>en-GB.mod_toolbar.ini</filename>
 		<filename>en-GB.mod_toolbar.sys.ini</filename>
-		<filename>en-GB.mod_version.ini</filename>
-		<filename>en-GB.mod_version.sys.ini</filename>
 		<filename>en-GB.plg_authentication_cookie.ini</filename>
 		<filename>en-GB.plg_authentication_cookie.sys.ini</filename>
 		<filename>en-GB.plg_authentication_gmail.ini</filename>
@@ -131,8 +126,6 @@
 		<filename>en-GB.plg_content_pagenavigation.sys.ini</filename>
 		<filename>en-GB.plg_content_vote.ini</filename>
 		<filename>en-GB.plg_content_vote.sys.ini</filename>
-		<filename>en-GB.plg_editors_codemirror.ini</filename>
-		<filename>en-GB.plg_editors_codemirror.sys.ini</filename>
 		<filename>en-GB.plg_editors_none.ini</filename>
 		<filename>en-GB.plg_editors_none.sys.ini</filename>
 		<filename>en-GB.plg_editors_tinymce.ini</filename>
@@ -199,8 +192,6 @@
 		<filename>en-GB.plg_system_log.sys.ini</filename>
 		<filename>en-GB.plg_system_logout.ini</filename>
 		<filename>en-GB.plg_system_logout.sys.ini</filename>
-		<filename>en-GB.plg_system_p3p.ini</filename>
-		<filename>en-GB.plg_system_p3p.sys.ini</filename>
 		<filename>en-GB.plg_system_redirect.ini</filename>
 		<filename>en-GB.plg_system_redirect.sys.ini</filename>
 		<filename>en-GB.plg_system_remember.ini</filename>
