@@ -39,7 +39,6 @@ ALTER TABLE `#__categories` ENGINE=InnoDB;
 ALTER TABLE `#__contact_details` ENGINE=InnoDB;
 ALTER TABLE `#__content` ENGINE=InnoDB;
 ALTER TABLE `#__content_frontpage` ENGINE=InnoDB;
-ALTER TABLE `#__content_rating` ENGINE=InnoDB;
 ALTER TABLE `#__core_log_searches` ENGINE=InnoDB;
 ALTER TABLE `#__extensions` ENGINE=InnoDB;
 ALTER TABLE `#__finder_filters` ENGINE=InnoDB;
