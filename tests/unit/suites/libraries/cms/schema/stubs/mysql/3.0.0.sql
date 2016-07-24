@@ -24,7 +24,6 @@ UPDATE `#__extensions` SET protected = 0 WHERE
 `name` = 'mod_articles_categories' OR
 `name` = 'plg_content_pagebreak' OR
 `name` = 'plg_content_pagenavigation' OR
-`name` = 'plg_content_vote' OR
 `name` = 'plg_editors_tinymce' OR
 `name` = 'plg_user_contactcreator' OR
 `name` = 'plg_user_profile';
