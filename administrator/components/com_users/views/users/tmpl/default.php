@@ -104,6 +104,10 @@ $loggeduser = JFactory::getUser();
 								<?php echo $this->escape($item->name); ?>
 							<?php endif; ?>
 							</div>
+							<div class="btn-group">
+								<?php echo JHtml::_('users.notes', $item->note_count, $item->id); ?>
+							</div>
+							<?php echo JHtml::_('users.notesModal', $item->note_count, $item->id); ?>
 							<?php if ($item->requireReset == '1') : ?>
 								<span class="label label-warning"><?php echo JText::_('COM_USERS_PASSWORD_RESET_REQUIRED'); ?></span>
 							<?php endif; ?>
