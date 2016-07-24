@@ -986,8 +986,6 @@ UNION ALL
 SELECT 457, 'plg_installer_urlinstaller', 'plugin', 'urlinstaller', 'installer', 0, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 3, 0;
 
 INSERT [#__extensions] ([extension_id], [name], [type], [element], [folder], [client_id], [enabled], [access], [protected], [manifest_cache], [params], [custom_data], [system_data], [checked_out], [checked_out_time], [ordering], [state])
-SELECT 504, 'hathor', 'template', 'hathor', '', 1, 1, 1, 0, '', '{"showSiteName":"0","colourChoice":"0","boldText":"0"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 506, 'protostar', 'template', 'protostar', '', 0, 1, 1, 0, '', '{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 507, 'isis', 'template', 'isis', '', 1, 1, 1, 0, '', '{"templateColor":"","logoFile":""}', '', '', 0, '1900-01-01 00:00:00', 0, 0;
@@ -2495,8 +2493,6 @@ CREATE NONCLUSTERED INDEX [idx_template] ON [#__template_styles]
 SET IDENTITY_INSERT [#__template_styles] ON;
 
 INSERT [#__template_styles] ([id], [template], [client_id], [home], [title], [params])
-SELECT 5, 'hathor', 1, '0', 'Hathor - Default', '{"showSiteName":"0","colourChoice":"","boldText":"0"}'
-UNION ALL
 SELECT 7, 'protostar', 0, '1', 'protostar - Default', '{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}'
 UNION ALL
 SELECT 8, 'isis', 1, '1', 'isis - Default', '{"templateColor":"","logoFile":""}';

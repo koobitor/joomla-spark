@@ -337,7 +337,6 @@ class JoomlaInstallerScript
 			array('plugin', 'urlinstaller','installer', 0),
 
 			// Templates
-			array('template', 'hathor', '', 1),
 			array('template', 'protostar', '', 0),
 			array('template', 'isis', '', 1),
 
@@ -514,9 +513,6 @@ class JoomlaInstallerScript
 			'/administrator/includes/router.php',
 			'/administrator/manifests/packages/pkg_joomla.xml',
 			'/administrator/modules/mod_submenu/helper.php',
-			'/administrator/templates/hathor/css/ie6.css',
-			'/administrator/templates/hathor/html/mod_submenu/index.html',
-			'/administrator/templates/hathor/html/mod_submenu/default.php',
 			'/components/com_media/controller.php',
 			'/components/com_media/helpers/index.html',
 			'/components/com_media/helpers/media.php',
@@ -1138,8 +1134,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_tags/helpers/html/index.html',
 			'/administrator/components/com_tags/models/fields/index.html',
 			'/administrator/manifests/libraries/phpmailer.xml',
-			'/administrator/templates/hathor/html/com_finder/filter/index.html',
-			'/administrator/templates/hathor/html/com_finder/statistics/index.html',
 			'/components/com_contact/helpers/icon.php',
 			'/language/en-GB/en-GB.lib_phpmailer.sys.ini',
 			'/libraries/compat/jsonserializable.php',
@@ -1421,8 +1415,6 @@ class JoomlaInstallerScript
 			// Joomla! 3.4
 			'/administrator/components/com_tags/helpers/html',
 			'/administrator/components/com_tags/models/fields',
-			'/administrator/templates/hathor/html/com_finder/filter',
-			'/administrator/templates/hathor/html/com_finder/statistics',
 			'/libraries/compat/password/lib',
 			'/libraries/compat/password',
 			'/libraries/compat',

@@ -1024,7 +1024,6 @@ SET IDENTITY_INSERT [#__newsfeeds] OFF;
 
 SET IDENTITY_INSERT [#__template_styles] ON;
 
-INSERT [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (5, 'hathor', 1, '0      ', 'Hathor - Default', '{"showSiteName":"0","colourChoice":"","boldText":"0"}');
 INSERT [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (7, 'protostar', 0, '1      ', 'protostar - Default', '{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}');
 INSERT [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (8, 'isis', 1, '1      ', 'isis - Default', '{"templateColor":"","logoFile":""}');
 

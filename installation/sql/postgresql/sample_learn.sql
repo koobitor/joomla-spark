@@ -776,7 +776,6 @@ SELECT setval('#__newsfeeds_id_seq', max(id)) FROM #__newsfeeds;
 -- Dumping data for table #__template_styles
 --
 INSERT INTO "#__template_styles" VALUES
-(5,'hathor',1,'0','Hathor - Default','{"showSiteName":"0","colourChoice":"","boldText":"0"}'),
 (7,'protostar',0,'1','protostar - Default','{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}'),
 (8,'isis',1,'1','isis - Default','{"templateColor":"","logoFile":""}');
 
