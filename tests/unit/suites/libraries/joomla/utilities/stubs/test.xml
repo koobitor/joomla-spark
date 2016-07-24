@@ -1167,25 +1167,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>41</value>
-			<value>Related Items</value>
-			<value>module</value>
-			<value>mod_related_items</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>42</value>
 			<value>Search</value>
 			<value>module</value>
@@ -1519,25 +1500,6 @@
 			<value>0</value>
 			<value></value>
 			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>63</value>
-			<value>Authentication - GMail</value>
-			<value>plugin</value>
-			<value>gmail</value>
-			<value>authentication</value>
-			<value>0</value>
-			<value>0</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{&quot;applysuffix&quot;:&quot;0&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;verifypeer&quot;:&quot;1&quot;,&quot;user_blacklist&quot;:&quot;&quot;}</value>
 			<value></value>
 			<value></value>
 			<value>0</value>

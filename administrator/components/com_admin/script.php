@@ -258,7 +258,6 @@ class JoomlaInstallerScript
 			array('module', 'mod_login', '', 0),
 			array('module', 'mod_menu', '', 0),
 			array('module', 'mod_articles_news', '', 0),
-			array('module', 'mod_related_items', '', 0),
 			array('module', 'mod_search', '', 0),
 			array('module', 'mod_stats', '', 0),
 			array('module', 'mod_articles_category', '', 0),
@@ -284,7 +283,7 @@ class JoomlaInstallerScript
 			array('module', 'mod_multilangstatus', '', 1),
 
 			// Plug-ins
-			array('plugin', 'gmail', 'authentication', 0),
+//			array('plugin', 'gmail', 'authentication', 0),
 			array('plugin', 'joomla', 'authentication', 0),
 			array('plugin', 'ldap', 'authentication', 0),
 			array('plugin', 'contact', 'content', 0),
@@ -336,7 +335,6 @@ class JoomlaInstallerScript
 			array('plugin', 'urlinstaller','installer', 0),
 
 			// Templates
-			array('template', 'hathor', '', 1),
 			array('template', 'protostar', '', 0),
 			array('template', 'isis', '', 1),
 
@@ -513,9 +511,6 @@ class JoomlaInstallerScript
 			'/administrator/includes/router.php',
 			'/administrator/manifests/packages/pkg_joomla.xml',
 			'/administrator/modules/mod_submenu/helper.php',
-			'/administrator/templates/hathor/css/ie6.css',
-			'/administrator/templates/hathor/html/mod_submenu/index.html',
-			'/administrator/templates/hathor/html/mod_submenu/default.php',
 			'/components/com_media/controller.php',
 			'/components/com_media/helpers/index.html',
 			'/components/com_media/helpers/media.php',
@@ -1137,8 +1132,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_tags/helpers/html/index.html',
 			'/administrator/components/com_tags/models/fields/index.html',
 			'/administrator/manifests/libraries/phpmailer.xml',
-			'/administrator/templates/hathor/html/com_finder/filter/index.html',
-			'/administrator/templates/hathor/html/com_finder/statistics/index.html',
 			'/components/com_contact/helpers/icon.php',
 			'/language/en-GB/en-GB.lib_phpmailer.sys.ini',
 			'/libraries/compat/jsonserializable.php',
@@ -1283,7 +1276,6 @@ class JoomlaInstallerScript
 			'/administrator/help/en-GB/Users_Debug_Users.html',
 			'/administrator/help/en-GB/Users_Groups.html',
 			'/administrator/help/en-GB/Users_Groups_Edit.html',
-			'/administrator/help/en-GB/Users_Mass_Mail_Users.html',
 			'/administrator/help/en-GB/Users_User_Manager.html',
 			'/administrator/help/en-GB/Users_User_Manager_Edit.html',
 			'/administrator/components/com_config/views/index.html',
@@ -1420,8 +1412,6 @@ class JoomlaInstallerScript
 			// Joomla! 3.4
 			'/administrator/components/com_tags/helpers/html',
 			'/administrator/components/com_tags/models/fields',
-			'/administrator/templates/hathor/html/com_finder/filter',
-			'/administrator/templates/hathor/html/com_finder/statistics',
 			'/libraries/compat/password/lib',
 			'/libraries/compat/password',
 			'/libraries/compat',

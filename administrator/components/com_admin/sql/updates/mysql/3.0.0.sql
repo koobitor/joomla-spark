@@ -84,7 +84,6 @@ ALTER TABLE `#__update_sites` ENGINE=InnoDB;
 ALTER TABLE `#__update_sites_extensions` ENGINE=InnoDB;
 ALTER TABLE `#__users` ENGINE=InnoDB;
 ALTER TABLE `#__usergroups` ENGINE=InnoDB;
-ALTER TABLE `#__user_notes` ENGINE=InnoDB;
 ALTER TABLE `#__user_profiles` ENGINE=InnoDB;
 ALTER TABLE `#__user_usergroup_map` ENGINE=InnoDB;
 ALTER TABLE `#__viewlevels` ENGINE=InnoDB;
@@ -101,9 +100,6 @@ ALTER TABLE `#__banners` ADD COLUMN `modified` datetime NOT NULL DEFAULT '0000-0
 ALTER TABLE `#__banners` ADD COLUMN `modified_by` int(10) unsigned NOT NULL DEFAULT '0';
 ALTER TABLE `#__banners` ADD COLUMN `version` int(10) unsigned NOT NULL DEFAULT '1';
 ALTER TABLE `#__categories` ADD COLUMN `version` int(10) unsigned NOT NULL DEFAULT '1';
-UPDATE  `#__assets` SET name=REPLACE( name, 'com_user.notes.category','com_users.category'  );
-UPDATE  `#__categories` SET extension=REPLACE( extension, 'com_user.notes.category','com_users.category'  );
-
 ALTER TABLE `#__finder_terms` ADD COLUMN `language` char(3) NOT NULL DEFAULT '';
 ALTER TABLE `#__finder_tokens` ADD COLUMN `language` char(3) NOT NULL DEFAULT '';
 ALTER TABLE `#__finder_tokens_aggregate` ADD COLUMN `language` char(3) NOT NULL DEFAULT '';
