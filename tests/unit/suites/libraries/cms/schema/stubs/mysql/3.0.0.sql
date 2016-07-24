@@ -84,7 +84,6 @@ ALTER TABLE `#__update_sites` ENGINE=InnoDB;
 ALTER TABLE `#__update_sites_extensions` ENGINE=InnoDB;
 ALTER TABLE `#__users` ENGINE=InnoDB;
 ALTER TABLE `#__usergroups` ENGINE=InnoDB;
-ALTER TABLE `#__user_notes` ENGINE=InnoDB;
 ALTER TABLE `#__user_profiles` ENGINE=InnoDB;
 ALTER TABLE `#__user_usergroup_map` ENGINE=InnoDB;
 ALTER TABLE `#__viewlevels` ENGINE=InnoDB;

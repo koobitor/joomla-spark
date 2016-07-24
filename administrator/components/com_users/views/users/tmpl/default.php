@@ -105,9 +105,7 @@ $loggeduser = JFactory::getUser();
 							<?php endif; ?>
 							</div>
 							<div class="btn-group">
-								<?php echo JHtml::_('users.filterNotes', $item->note_count, $item->id); ?>
 								<?php echo JHtml::_('users.notes', $item->note_count, $item->id); ?>
-								<?php echo JHtml::_('users.addNote', $item->id); ?>
 							</div>
 							<?php echo JHtml::_('users.notesModal', $item->note_count, $item->id); ?>
 							<?php if ($item->requireReset == '1') : ?>
