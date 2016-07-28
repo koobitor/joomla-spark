@@ -585,20 +585,6 @@ CREATE TABLE [#__content_frontpage](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY];
 
-/****** Object:  Table [#__content_rating] ******/
-SET QUOTED_IDENTIFIER ON;
-
-CREATE TABLE [#__content_rating](
-	[content_id] [int] NOT NULL DEFAULT 0,
-	[rating_sum] [bigint] NOT NULL DEFAULT 0,
-	[rating_count] [bigint] NOT NULL DEFAULT 0,
-	[lastip] [nvarchar](50) NOT NULL DEFAULT '',
- CONSTRAINT [PK_#__content_rating_content_id] PRIMARY KEY CLUSTERED
-(
-	[content_id] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
-) ON [PRIMARY];
-
 /****** Object:  Table [#__content_types] ******/
 SET QUOTED_IDENTIFIER ON;
 
@@ -884,8 +870,6 @@ UNION ALL
 SELECT 407, 'plg_content_pagebreak', 'plugin', 'pagebreak', 'content', 0, 1, 1, 0, '', '{"title":"1","multipage_toc":"1","showall":"1"}', '', '', 0, '1900-01-01 00:00:00', 4, 0
 UNION ALL
 SELECT 408, 'plg_content_pagenavigation', 'plugin', 'pagenavigation', 'content', 0, 1, 1, 0, '', '{"position":"1"}', '', '', 0, '1900-01-01 00:00:00', 5, 0
-UNION ALL
-SELECT 409, 'plg_content_vote', 'plugin', 'vote', 'content', 0, 1, 1, 0, '', '', '', '', 0, '1900-01-01 00:00:00', 6, 0
 UNION ALL
 SELECT 411, 'plg_editors_none', 'plugin', 'none', 'editors', 0, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 2, 0
 UNION ALL

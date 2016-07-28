@@ -161,28 +161,6 @@ class ContentHelperQuery
 	 */
 	public static function buildVotingQuery($params = null)
 	{
-		if (!$params)
-		{
-			$params = JComponentHelper::getParams('com_content');
-		}
-
-		$voting = $params->get('show_vote');
-
-		if ($voting)
-		{
-			// Calculate voting count
-			$select = ' , ROUND(v.rating_sum / v.rating_count) AS rating, v.rating_count';
-			$join = ' LEFT JOIN #__content_rating AS v ON a.id = v.content_id';
-		}
-		else
-		{
-			$select = '';
-			$join = '';
-		}
-
-		$results = array ('select' => $select, 'join' => $join);
-
-		return $results;
 	}
 
 	/**
