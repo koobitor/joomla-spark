@@ -12,7 +12,7 @@
 		<field
 			name="source"
 			type="editor"
-			editor="codemirror|none"
+			editor="none"
 			buttons="no"
 			label="COM_TEMPLATES_FIELD_SOURCE_LABEL"
 			description="COM_TEMPLATES_FIELD_SOURCE_DESC"

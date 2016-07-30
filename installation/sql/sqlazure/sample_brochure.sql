@@ -14,7 +14,6 @@ INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [titl
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('10', '1', '37', '38', '1', N'com_installer', N'com_installer', N'{"core.admin":[],"core.manage":{"7":0},"core.delete":{"7":0},"core.edit.state":{"7":0}}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('11', '1', '39', '40', '1', N'com_languages', N'com_languages', N'{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('12', '1', '41', '42', '1', N'com_login', N'com_login', N'{}');
-INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('13', '1', '43', '44', '1', N'com_mailto', N'com_mailto', N'{}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('14', '1', '45', '46', '1', N'com_massmail', N'com_massmail', N'{}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('15', '1', '47', '48', '1', N'com_media', N'com_media', N'{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('16', '1', '49', '50', '1', N'com_menus', N'com_menus', N'{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
@@ -26,7 +25,6 @@ INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [titl
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('22', '1', '63', '64', '1', N'com_search', N'com_search', N'{"core.admin":{"7":1},"core.manage":{"6":1}}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('23', '1', '65', '66', '1', N'com_templates', N'com_templates', N'{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('24', '1', '67', '70', '1', N'com_users', N'com_users', N'{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":{"6":1}}');
-INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('26', '1', '75', '76', '1', N'com_wrapper', N'com_wrapper', N'{}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('27', '8', '18', '25', '2', N'com_content.catery.2', N'Uncaterised', N'{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('28', '3', '4', '5', '2', N'com_banners.catery.3', N'Uncaterised', N'{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}');
 INSERT INTO [#__assets] ([id], [parent_id], [lft], [rgt], [level], [name], [title], [rules]) VALUES ('29', '7', '14', '15', '2', N'com_contact.catery.4', N'Uncaterised', N'{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}');
@@ -177,7 +175,6 @@ TRUNCATE TABLE [#__template_styles];
 SET IDENTITY_INSERT [#__template_styles] ON
 INSERT INTO [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (2, N'bluestork', 1, N'1      ', N'Bluestork - Default', N'{"useRoundedCorners":"1","showSiteName":"0"}');
 INSERT INTO [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (3, N'atomic', 0, N'0      ', N'Atomic - Default', N'{}');
-INSERT INTO [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (4, N'beez3', 0, N'0      ', N'Beez3 - Default', N'{"wrapperSmall":"53","wrapperLarge":"72","lo":"images/joomla_black.png","sitetitle":"Joomla!","sitedescription":"Open Source Content Management","navposition":"left","templatecolor":"personal","html5":"0"}');
 INSERT INTO [#__template_styles] ([id], [template], [client_id], [home], [title], [params]) VALUES (6, N'beez5', 0, N'1      ', N'Your Basic Template', N'{"wrapperSmall":53,"wrapperLarge":72,"lo":"","sitetitle":"Your site name or image","sitedescription":"Your tag line for the top of every page","navposition":"left","html5":1}');
 
 SET IDENTITY_INSERT [#__template_styles] OFF

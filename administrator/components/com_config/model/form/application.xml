@@ -425,20 +425,6 @@
 		</field>
 
 		<field
-			name="massmailoff"
-			type="radio"
-			label="COM_CONFIG_FIELD_MAIL_MASSMAILOFF_LABEL"
-			description="COM_CONFIG_FIELD_MAIL_MASSMAILOFF_DESC"
-			class="btn-group btn-group-yesno"
-			default="0"
-			filter="integer"
-			showon="mailonline:1"
-			>
-			<option value="1">JYES</option>
-			<option value="0">JNO</option>
-		</field>
-
-		<field
 			name="mailfrom"
 			type="email"
 			label="COM_CONFIG_FIELD_MAIL_FROM_EMAIL_LABEL"
