@@ -1394,7 +1394,7 @@ class PlgSystemDebug extends JPlugin
 			}
 		}
 
-		if (in_array($db->name, array('mysqli', 'mysql', 'pdomysql', 'postgresql')))
+		if (in_array($db->name, array('mysqli', 'mysql', 'pdomysql')))
 		{
 			$log = $db->getLog();
 
