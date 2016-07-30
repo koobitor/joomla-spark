@@ -23,9 +23,7 @@ class JSchemaChangeitemTest extends TestCase
 			'MySQL'      => array('Mysql', 'Mysql', 'mysql'),
 			'MySQLi'     => array('Mysqli', 'Mysql', 'mysql'),
 			'PDO MySQL'  => array('Pdomysql', 'Mysql', 'mysql'),
-			'PostgreSQL' => array('Postgresql', 'Postgresql', 'postgresql'),
-			'SQL Server' => array('Sqlsrv', 'Sqlsrv', 'sqlazure'),
-			'SQL Azure'  => array('Sqlazure', 'Sqlsrv', 'sqlazure'),
+			'PostgreSQL' => array('Postgresql', 'Postgresql', 'postgresql')
 		);
 	}
 
