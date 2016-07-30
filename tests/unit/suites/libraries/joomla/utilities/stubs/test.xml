@@ -130,16 +130,6 @@
 			<value>{}</value>
 		</row>
 		<row>
-			<value>13</value>
-			<value>1</value>
-			<value>42</value>
-			<value>43</value>
-			<value>1</value>
-			<value>com_mailto</value>
-			<value>com_mailto</value>
-			<value>{}</value>
-		</row>
-		<row>
 			<value>14</value>
 			<value>1</value>
 			<value>44</value>
@@ -258,16 +248,6 @@
 			<value>com_weblinks</value>
 			<value>com_weblinks</value>
 			<value>{&quot;core.admin&quot;:{&quot;7&quot;:1},&quot;core.manage&quot;:{&quot;6&quot;:1},&quot;core.create&quot;:[],&quot;core.delete&quot;:[],&quot;core.edit&quot;:[],&quot;core.edit.state&quot;:[]}</value>
-		</row>
-		<row>
-			<value>26</value>
-			<value>1</value>
-			<value>76</value>
-			<value>77</value>
-			<value>1</value>
-			<value>com_wrapper</value>
-			<value>com_wrapper</value>
-			<value>{}</value>
 		</row>
 	</table>
 	<table name="jos_banner_clients">
@@ -474,12 +454,6 @@
 		<column>content_id</column>
 		<column>ordering</column>
 	</table>
-	<table name="jos_content_rating">
-		<column>content_id</column>
-		<column>rating_sum</column>
-		<column>rating_count</column>
-		<column>lastip</column>
-	</table>
 	<table name="jos_core_log_searches">
 		<column>search_term</column>
 		<column>hits</column>
@@ -502,44 +476,6 @@
 		<column>checked_out_time</column>
 		<column>ordering</column>
 		<column>state</column>
-		<row>
-			<value>1</value>
-			<value>MailTo</value>
-			<value>component</value>
-			<value>com_mailto</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>2</value>
-			<value>Wrapper</value>
-			<value>component</value>
-			<value>com_wrapper</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
 		<row>
 			<value>3</value>
 			<value>Admin</value>
@@ -1168,25 +1104,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>36</value>
-			<value>Footer</value>
-			<value>module</value>
-			<value>mod_footer</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>37</value>
 			<value>Login</value>
 			<value>module</value>
@@ -1244,44 +1161,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>40</value>
-			<value>Random Image</value>
-			<value>module</value>
-			<value>mod_random_image</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>41</value>
-			<value>Related Items</value>
-			<value>module</value>
-			<value>mod_related_items</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>42</value>
 			<value>Search</value>
 			<value>module</value>
@@ -1320,44 +1199,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>44</value>
-			<value>Syndicate</value>
-			<value>module</value>
-			<value>mod_syndicate</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>45</value>
-			<value>Latest Users</value>
-			<value>module</value>
-			<value>mod_users_latest</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>46</value>
 			<value>Web Links</value>
 			<value>module</value>
@@ -1380,26 +1221,6 @@
 			<value>47</value>
 			<value>Who's Online</value>
 			<value>module</value>
-			<value>mod_whosonline</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>48</value>
-			<value>Wrapper</value>
-			<value>module</value>
-			<value>mod_wrapper</value>
 			<value></value>
 			<value>0</value>
 			<value>1</value>
@@ -1681,25 +1502,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>63</value>
-			<value>Authentication - GMail</value>
-			<value>plugin</value>
-			<value>gmail</value>
-			<value>authentication</value>
-			<value>0</value>
-			<value>0</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{&quot;applysuffix&quot;:&quot;0&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;verifypeer&quot;:&quot;1&quot;,&quot;user_blacklist&quot;:&quot;&quot;}</value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>64</value>
 			<value>Authentication - Joomla</value>
 			<value>plugin</value>
@@ -1863,44 +1665,6 @@
 			<value>0</value>
 			<value></value>
 			<value>{&quot;position&quot;:&quot;1&quot;}</value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>73</value>
-			<value>Content - Vote</value>
-			<value>plugin</value>
-			<value>vote</value>
-			<value>content</value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{}</value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>74</value>
-			<value>Editor - CodeMirror</value>
-			<value>plugin</value>
-			<value>codemirror</value>
-			<value>editors</value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{&quot;linenumbers&quot;:&quot;0&quot;,&quot;tabmode&quot;:&quot;indent&quot;}</value>
 			<value></value>
 			<value></value>
 			<value>0</value>

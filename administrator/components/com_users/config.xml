@@ -177,56 +177,6 @@
 	</fieldset>
 
 	<fieldset
-		name="user_notes_history"
-		label="COM_USERS_CONFIG_FIELD_NOTES_HISTORY" >
-
-			<field
-			name="save_history"
-			type="radio"
-			class="btn-group btn-group-yesno"
-			default="0"
-			label="JGLOBAL_SAVE_HISTORY_OPTIONS_LABEL"
-			description="JGLOBAL_SAVE_HISTORY_OPTIONS_DESC"
-			>
-			<option value="1">JYES</option>
-			<option value="0">JNO</option>
-		</field>
-
-		<field
-			name="history_limit"
-			type="text"
-			filter="integer"
-			label="JGLOBAL_HISTORY_LIMIT_OPTIONS_LABEL"
-			description="JGLOBAL_HISTORY_LIMIT_OPTIONS_DESC"
-			default="5"
-			showon="save_history:1"
-		/>
-	</fieldset>
-
- 	<fieldset
-		name="massmail"
-		label="COM_USERS_MASS_MAIL"
-		description="COM_USERS_MASS_MAIL_DESC">
-
-		<field
- 			name="mailSubjectPrefix"
- 			type="text"
-			label="COM_USERS_CONFIG_FIELD_SUBJECT_PREFIX_LABEL"
-			description="COM_USERS_CONFIG_FIELD_SUBJECT_PREFIX_DESC"
-		/>
-
- 		<field
- 			name="mailBodySuffix"
-			type="textarea"
- 			rows="5"
- 			cols="30"
-			label="COM_USERS_CONFIG_FIELD_MAILBODY_SUFFIX_LABEL"
-			description="COM_USERS_CONFIG_FIELD_MAILBODY_SUFFIX_DESC"
-		/>
-
-	</fieldset>
-
-	<fieldset
 		name="permissions"
 		label="JCONFIG_PERMISSIONS_LABEL"
 		description="JCONFIG_PERMISSIONS_DESC"

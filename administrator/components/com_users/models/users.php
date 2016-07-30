@@ -180,7 +180,6 @@ class UsersModelUsers extends JModelList
 				$userIds[] = (int) $item->id;
 				$item->group_count = 0;
 				$item->group_names = '';
-				$item->note_count = 0;
 			}
 
 			// Get the counts from the database only for the users in the list.
@@ -209,27 +208,6 @@ class UsersModelUsers extends JModelList
 				return false;
 			}
 
-			$query->clear()
-				->select('n.user_id, COUNT(n.id) As note_count')
-				->from('#__user_notes AS n')
-				->where('n.user_id IN (' . implode(',', $userIds) . ')')
-				->where('n.state >= 0')
-				->group('n.user_id');
-
-			$db->setQuery($query);
-
-			// Load the counts into an array indexed on the aro.value field (the user id).
-			try
-			{
-				$userNotes = $db->loadObjectList('user_id');
-			}
-			catch (RuntimeException $e)
-			{
-				$this->setError($e->getMessage());
-
-				return false;
-			}
-
 			// Second pass: collect the group counts into the master items array.
 			foreach ($items as &$item)
 			{
@@ -239,11 +217,6 @@ class UsersModelUsers extends JModelList
 
 					// Group_concat in other databases is not supported
 					$item->group_names = $this->_getUserDisplayedGroups($item->id);
-				}
-
-				if (isset($userNotes[$item->id]))
-				{
-					$item->note_count = $userNotes[$item->id]->note_count;
 				}
 			}
 
