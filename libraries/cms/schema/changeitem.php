@@ -145,10 +145,6 @@ abstract class JSchemaChangeitem
 		{
 			$dbname = 'mysql';
 		}
-		elseif ($dbname == 'sqlazure')
-		{
-			$dbname = 'sqlsrv';
-		}
 
 		$class = 'JSchemaChangeitem' . ucfirst($dbname);
 

@@ -90,23 +90,6 @@ class FinderIndexerTest extends TestCaseDatabase
 	 * @return  void
 	 *
 	 * @since   3.0
-	 */
-	public function testGetInstanceSqlazure()
-	{
-		JFactory::$database->name = 'sqlazure';
-
-		$this->assertInstanceOf(
-			'FinderIndexerDriverSqlsrv',
-			FinderIndexer::getInstance()
-		);
-	}
-
-	/**
-	 * Tests the getInstance method
-	 *
-	 * @return  void
-	 *
-	 * @since   3.0
 	 * @expectedException  RuntimeException
 	 */
 	public function testGetInstanceException()
