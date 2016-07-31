@@ -22,8 +22,7 @@ class JSchemaChangeitemTest extends TestCase
 		return array(
 			'MySQL'      => array('Mysql', 'Mysql', 'mysql'),
 			'MySQLi'     => array('Mysqli', 'Mysql', 'mysql'),
-			'PDO MySQL'  => array('Pdomysql', 'Mysql', 'mysql'),
-			'PostgreSQL' => array('Postgresql', 'Postgresql', 'postgresql')
+			'PDO MySQL'  => array('Pdomysql', 'Mysql', 'mysql')
 		);
 	}
 
