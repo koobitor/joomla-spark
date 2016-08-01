@@ -209,7 +209,7 @@
 			type="databaseconnection"
 			label="COM_CONFIG_FIELD_DATABASE_TYPE_LABEL"
 			description="COM_CONFIG_FIELD_DATABASE_TYPE_DESC"
-			supported="mysql,mysqli,pdomysql,postgresql,sqlsrv,sqlazure"
+			supported="mysql,mysqli,pdomysql,sqlsrv"
 			filter="string" />
 
 		<field
@@ -419,20 +419,6 @@
 			class="btn-group btn-group-yesno"
 			default="1"
 			filter="integer"
-			>
-			<option value="1">JYES</option>
-			<option value="0">JNO</option>
-		</field>
-
-		<field
-			name="massmailoff"
-			type="radio"
-			label="COM_CONFIG_FIELD_MAIL_MASSMAILOFF_LABEL"
-			description="COM_CONFIG_FIELD_MAIL_MASSMAILOFF_DESC"
-			class="btn-group btn-group-yesno"
-			default="0"
-			filter="integer"
-			showon="mailonline:1"
 			>
 			<option value="1">JYES</option>
 			<option value="0">JNO</option>

@@ -158,16 +158,6 @@ class InstallationModelDatabase extends JModelBase
 			return false;
 		}
 
-		// Workaround for UPPERCASE table prefix for postgresql
-		if ($options->db_type == 'postgresql')
-		{
-			if (strtolower($options->db_prefix) != $options->db_prefix)
-			{
-				$app->enqueueMessage(JText::_('INSTL_DATABASE_FIX_LOWERCASE'), 'notice');
-				return false;
-			}
-		}
-
 		// Get a database object.
 		try
 		{
@@ -276,12 +266,6 @@ class InstallationModelDatabase extends JModelBase
 					return false;
 				}
 			}
-			elseif ($type == 'postgresql' && strpos($e->getMessage(), 'Error connecting to PGSQL database') === 42)
-			{
-				$app->enqueueMessage(JText::_('INSTL_DATABASE_COULD_NOT_CREATE_DATABASE'), 'notice');
-
-				return false;
-			}
 			// Anything getting into this part of the conditional either doesn't support manually creating the database or isn't that type of error
 			else
 			{
@@ -323,41 +307,6 @@ class InstallationModelDatabase extends JModelBase
 			$app->enqueueMessage(JText::_('INSTL_DATABASE_NAME_INVALID_CHAR'), 'notice');
 
 			return false;
-		}
-
-		// PostgreSQL database older than version 9.0.0 needs to run 'CREATE LANGUAGE' to create function.
-		if (($options->db_type == 'postgresql') && (!version_compare($db_version, '9.0.0', '>=')))
-		{
-			$db->setQuery("select lanpltrusted from pg_language where lanname='plpgsql'");
-
-			try
-			{
-				$db->execute();
-			}
-			catch (RuntimeException $e)
-			{
-				$app->enqueueMessage(JText::_('JLIB_DATABASE_ERROR_DATABASE_QUERY'), 'notice');
-
-				return false;
-			}
-
-			$column = $db->loadResult();
-
-			if ($column != 't')
-			{
-				$db->setQuery("CREATE LANGUAGE plpgsql");
-
-				try
-				{
-					$db->execute();
-				}
-				catch (RuntimeException $e)
-				{
-					$app->enqueueMessage(JText::_('JLIB_DATABASE_ERROR_DATABASE_QUERY'), 'notice');
-
-					return false;
-				}
-			}
 		}
 
 		// Get database's UTF support.
@@ -494,10 +443,6 @@ class InstallationModelDatabase extends JModelBase
 		{
 			$schema = 'sql/mysql/joomla.sql';
 		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$schema = 'sql/sqlazure/joomla.sql';
-		}
 		else
 		{
 			$schema = 'sql/' . $type . '/joomla.sql';
@@ -548,10 +493,6 @@ class InstallationModelDatabase extends JModelBase
 		if (($type == 'mysql') || ($type == 'mysqli') || ($type == 'pdomysql'))
 		{
 			$pathPart .= 'mysql/';
-		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$pathPart .= 'sqlazure/';
 		}
 		else
 		{
@@ -634,10 +575,6 @@ class InstallationModelDatabase extends JModelBase
 		if (($type == 'mysql') || ($type == 'mysqli') || ($type == 'pdomysql'))
 		{
 			$dblocalise = 'sql/mysql/localise.sql';
-		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$dblocalise = 'sql/sqlazure/localise.sql';
 		}
 		else
 		{
@@ -732,10 +669,6 @@ class InstallationModelDatabase extends JModelBase
 		if ($type == 'mysqli' || $type == 'pdomysql')
 		{
 			$type = 'mysql';
-		}
-		elseif ($type == 'sqlsrv')
-		{
-			$type = 'sqlazure';
 		}
 
 		$data = JPATH_INSTALLATION . '/sql/' . $type . '/' . $options->sample_file;

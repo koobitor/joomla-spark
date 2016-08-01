@@ -97,7 +97,6 @@ class MenuItemEditPage extends AdminEditPage
 			array('label' => 'Show Modify Date', 'id' => 'jform_params_show_modify_date', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
 			array('label' => 'Show Publish Date', 'id' => 'jform_params_show_publish_date', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
 			array('label' => 'Show Navigation', 'id' => 'jform_params_show_item_navigation', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
-			array('label' => 'Show Voting', 'id' => 'jform_params_show_vote', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
 			array('label' => 'Show Tags', 'id' => 'jform_params_show_tags', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
 			array('label' => 'Show Icons', 'id' => 'jform_params_show_icons', 'type' => 'fieldset', 'tab' => 'attrib-basic'),
 			array('label' => 'Show Print Icon', 'id' => 'jform_params_show_print_icon', 'type' => 'fieldset','tab' => 'attrib-basic'),

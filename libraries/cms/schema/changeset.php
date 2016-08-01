@@ -262,10 +262,6 @@ class JSchemaChangeset
 		{
 			$sqlFolder = 'mysql';
 		}
-		elseif ($sqlFolder == 'sqlsrv')
-		{
-			$sqlFolder = 'sqlazure';
-		}
 
 		// Default folder to core com_admin
 		if (!$this->folder)

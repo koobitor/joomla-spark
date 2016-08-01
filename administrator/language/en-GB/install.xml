@@ -100,12 +100,9 @@
 		<filename>en-GB.mod_toolbar.sys.ini</filename>
 		<filename>en-GB.plg_authentication_cookie.ini</filename>
 		<filename>en-GB.plg_authentication_cookie.sys.ini</filename>
-		<filename>en-GB.plg_authentication_gmail.ini</filename>
-		<filename>en-GB.plg_authentication_gmail.sys.ini</filename>
+
 		<filename>en-GB.plg_authentication_joomla.ini</filename>
 		<filename>en-GB.plg_authentication_joomla.sys.ini</filename>
-		<filename>en-GB.plg_authentication_ldap.ini</filename>
-		<filename>en-GB.plg_authentication_ldap.sys.ini</filename>
 		<filename>en-GB.plg_captcha_recaptcha.ini</filename>
 		<filename>en-GB.plg_captcha_recaptcha.sys.ini</filename>
 		<filename>en-GB.plg_content_contact.ini</filename>
@@ -122,8 +119,6 @@
 		<filename>en-GB.plg_content_pagebreak.sys.ini</filename>
 		<filename>en-GB.plg_content_pagenavigation.ini</filename>
 		<filename>en-GB.plg_content_pagenavigation.sys.ini</filename>
-		<filename>en-GB.plg_content_vote.ini</filename>
-		<filename>en-GB.plg_content_vote.sys.ini</filename>
 		<filename>en-GB.plg_editors_none.ini</filename>
 		<filename>en-GB.plg_editors_none.sys.ini</filename>
 		<filename>en-GB.plg_editors_tinymce.ini</filename>
@@ -210,8 +205,6 @@
 		<filename>en-GB.plg_user_joomla.sys.ini</filename>
 		<filename>en-GB.plg_user_profile.ini</filename>
 		<filename>en-GB.plg_user_profile.sys.ini</filename>
-		<filename>en-GB.tpl_hathor.ini</filename>
-		<filename>en-GB.tpl_hathor.sys.ini</filename>
 		<filename>en-GB.tpl_isis.ini</filename>
 		<filename>en-GB.tpl_isis.sys.ini</filename>
 		<filename file="meta">en-GB.xml</filename>

@@ -454,12 +454,6 @@
 		<column>content_id</column>
 		<column>ordering</column>
 	</table>
-	<table name="jos_content_rating">
-		<column>content_id</column>
-		<column>rating_sum</column>
-		<column>rating_count</column>
-		<column>lastip</column>
-	</table>
 	<table name="jos_core_log_searches">
 		<column>search_term</column>
 		<column>hits</column>
@@ -1167,48 +1161,29 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>40</value>
-			<value>Random Image</value>
-			<value>module</value>
-			<value>mod_random_image</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>41</value>
-			<value>Related Items</value>
-			<value>module</value>
-			<value>mod_related_items</value>
-			<value></value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>42</value>
 			<value>Search</value>
 			<value>module</value>
 			<value>mod_search</value>
+			<value></value>
+			<value>0</value>
+			<value>1</value>
+			<value>1</value>
+			<value>0</value>
+			<value></value>
+			<value></value>
+			<value></value>
+			<value></value>
+			<value>0</value>
+			<value>0000-00-00 00:00:00</value>
+			<value>0</value>
+			<value>0</value>
+		</row>
+		<row>
+			<value>43</value>
+			<value>Statistics</value>
+			<value>module</value>
+			<value>mod_stats</value>
 			<value></value>
 			<value>0</value>
 			<value>1</value>
@@ -1546,25 +1521,6 @@
 			<value>0</value>
 		</row>
 		<row>
-			<value>63</value>
-			<value>Authentication - GMail</value>
-			<value>plugin</value>
-			<value>gmail</value>
-			<value>authentication</value>
-			<value>0</value>
-			<value>0</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{&quot;applysuffix&quot;:&quot;0&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;verifypeer&quot;:&quot;1&quot;,&quot;user_blacklist&quot;:&quot;&quot;}</value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
 			<value>64</value>
 			<value>Authentication - Joomla</value>
 			<value>plugin</value>
@@ -1728,25 +1684,6 @@
 			<value>0</value>
 			<value></value>
 			<value>{&quot;position&quot;:&quot;1&quot;}</value>
-			<value></value>
-			<value></value>
-			<value>0</value>
-			<value>0000-00-00 00:00:00</value>
-			<value>0</value>
-			<value>0</value>
-		</row>
-		<row>
-			<value>73</value>
-			<value>Content - Vote</value>
-			<value>plugin</value>
-			<value>vote</value>
-			<value>content</value>
-			<value>0</value>
-			<value>1</value>
-			<value>1</value>
-			<value>0</value>
-			<value></value>
-			<value>{}</value>
 			<value></value>
 			<value></value>
 			<value>0</value>
