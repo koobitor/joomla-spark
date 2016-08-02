@@ -108,7 +108,6 @@ class LanguagesViewOverrides extends JViewLegacy
 		}
 
 		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_EXTENSIONS_LANGUAGE_MANAGER_OVERRIDES');
 
 		JHtmlSidebar::setAction('index.php?option=com_languages&view=overrides');
 

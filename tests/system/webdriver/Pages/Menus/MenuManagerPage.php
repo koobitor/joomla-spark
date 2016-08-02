@@ -32,7 +32,6 @@ class MenuManagerPage extends AdminManagerPage
 			'Delete' => 'toolbar-delete',
 			'Rebuild' => 'toolbar-refresh',
 			'Options' => 'toolbar-options',
-			'Help' => 'toolbar-help',
 	);
 
 	public $submenu = array (

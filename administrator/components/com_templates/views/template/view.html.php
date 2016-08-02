@@ -254,7 +254,6 @@ class TemplatesViewTemplate extends JViewLegacy
 		}
 
 		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_EXTENSIONS_TEMPLATE_MANAGER_TEMPLATES_EDIT');
 	}
 
 	/**

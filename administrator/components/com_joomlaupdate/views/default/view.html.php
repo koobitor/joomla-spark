@@ -83,7 +83,6 @@ class JoomlaupdateViewDefault extends JViewLegacy
 		}
 
 		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_JOOMLA_UPDATE');
 
 		if (!is_null($this->updateInfo['object']))
 		{

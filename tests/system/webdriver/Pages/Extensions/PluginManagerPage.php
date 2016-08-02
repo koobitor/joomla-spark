@@ -63,8 +63,6 @@ class PluginManagerPage extends AdminManagerPage
 			'Enable' => 'toolbar-publish',
 			'Disable' => 'toolbar-unpublish',
 			'Check In' => 'toolbar-checkin',
-			'Options' => 'toolbar-options',
-			'Help' => 'toolbar-help',
 			);
 
 	/**

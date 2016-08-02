@@ -137,7 +137,5 @@ class ContactViewContact extends JViewLegacy
 			JToolbarHelper::cancel('contact.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_CONTACTS_CONTACTS_EDIT');
 	}
 }

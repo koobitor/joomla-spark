@@ -41,7 +41,6 @@ class UserManagerPage extends AdminManagerPage
 			'Unblock' => 'toolbar-unblock',
 			'Delete' => 'toolbar-delete',
 			'Options' => 'toolbar-options',
-			'Help' => 'toolbar-help',
 			);
 
 	public $submenu = array (

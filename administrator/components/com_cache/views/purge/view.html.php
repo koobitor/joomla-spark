@@ -49,9 +49,6 @@ class CacheViewPurge extends JViewLegacy
 		if (JFactory::getUser()->authorise('core.admin', 'com_cache'))
 		{
 			JToolbarHelper::preferences('com_cache');
-			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_SITE_MAINTENANCE_PURGE_EXPIRED_CACHE');
 	}
 }

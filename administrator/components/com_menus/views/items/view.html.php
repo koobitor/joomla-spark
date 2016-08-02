@@ -311,7 +311,6 @@ class MenusViewItems extends JViewLegacy
 			JToolbarHelper::trash('items.trash');
 		}
 
-		JToolbarHelper::help('JHELP_MENUS_MENU_ITEM_MANAGER');
 	}
 
 	/**

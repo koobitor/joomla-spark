@@ -101,7 +101,5 @@ class UsersViewLevel extends JViewLegacy
 			JToolbarHelper::cancel('level.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_USERS_ACCESS_LEVELS_EDIT');
 	}
 }

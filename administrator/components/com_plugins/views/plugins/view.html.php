@@ -80,8 +80,6 @@ class PluginsViewPlugins extends JViewLegacy
 			JToolbarHelper::preferences('com_plugins');
 		}
 
-		JToolbarHelper::help('JHELP_EXTENSIONS_PLUGIN_MANAGER');
-
 	}
 
 	/**

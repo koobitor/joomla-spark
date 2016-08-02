@@ -110,7 +110,5 @@ class MenusViewMenus extends JViewLegacy
 			JToolbarHelper::preferences('com_menus');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_MENUS_MENU_MANAGER');
 	}
 }

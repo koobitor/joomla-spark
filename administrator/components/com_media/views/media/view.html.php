@@ -111,7 +111,6 @@ class MediaViewMedia extends JViewLegacy
 			JToolbarHelper::divider();
 		}
 
-		JToolbarHelper::help('JHELP_CONTENT_MEDIA_MANAGER');
 	}
 
 	/**

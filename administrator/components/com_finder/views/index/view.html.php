@@ -110,6 +110,5 @@ class FinderViewIndex extends JViewLegacy
 			JToolbarHelper::trash('index.purge', 'COM_FINDER_INDEX_TOOLBAR_PURGE', false);
 		}
 
-		JToolbarHelper::help('JHELP_COMPONENTS_FINDER_MANAGE_INDEXED_CONTENT');
 	}
 }

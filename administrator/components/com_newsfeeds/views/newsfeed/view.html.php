@@ -123,7 +123,5 @@ class NewsfeedsViewNewsfeed extends JViewLegacy
 			JToolbarHelper::cancel('newsfeed.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_NEWSFEEDS_FEEDS_EDIT');
 	}
 }

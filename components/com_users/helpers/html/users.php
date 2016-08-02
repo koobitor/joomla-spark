@@ -58,52 +58,6 @@ abstract class JHtmlUsers
 	}
 
 	/**
-	 * Get the sanitized helpsite link
-	 *
-	 * @param   mixed  $value  Value of the field
-	 *
-	 * @return  mixed  String/void
-	 *
-	 * @since   1.6
-	 */
-	public static function helpsite($value)
-	{
-		if (empty($value))
-		{
-			return static::value($value);
-		}
-		else
-		{
-			$pathToXml = JPATH_ADMINISTRATOR . '/help/helpsites.xml';
-
-			$text = $value;
-
-			if (!empty($pathToXml) && $xml = simplexml_load_file($pathToXml))
-			{
-				foreach ($xml->sites->site as $site)
-				{
-					if ((string) $site->attributes()->url == $value)
-					{
-						$text = (string) $site;
-						break;
-					}
-				}
-			}
-
-			$value = htmlspecialchars($value, ENT_COMPAT, 'UTF-8');
-
-			if (substr($value, 0, 4) == "http")
-			{
-				return '<a href="' . $value . '">' . $text . '</a>';
-			}
-			else
-			{
-				return '<a href="http://' . $value . '">' . $text . '</a>';
-			}
-		}
-	}
-
-	/**
 	 * Get the sanitized template style
 	 *
 	 * @param   mixed  $value  Value of the field

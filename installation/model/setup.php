@@ -52,8 +52,6 @@ class InstallationModelSetup extends JModelBase
 			$options['language'] = JFactory::getLanguage()->getTag();
 		}
 
-		$options['helpurl'] = $session->get('setup.helpurl', null);
-
 		// Merge the new setup options into the current ones and store in the session.
 		$options = array_merge($old, (array) $options);
 		$session->set('setup.options', $options);

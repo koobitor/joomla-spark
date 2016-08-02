@@ -114,7 +114,5 @@ class MessagesViewMessages extends JViewLegacy
 			JToolbarHelper::preferences('com_messages');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_MESSAGING_INBOX');
 	}
 }

@@ -132,7 +132,5 @@ class ContentViewArticle extends JViewLegacy
 			JToolbarHelper::cancel('article.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_CONTENT_ARTICLE_MANAGER_EDIT');
 	}
 }

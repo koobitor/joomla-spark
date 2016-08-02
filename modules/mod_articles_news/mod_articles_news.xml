@@ -18,7 +18,6 @@
 		<language tag="en-GB">en-GB.mod_articles_news.ini</language>
 		<language tag="en-GB">en-GB.mod_articles_news.sys.ini</language>
 	</languages>
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_NEWSFLASH" />
 	<config>
 		<fields name="params">
 			<fieldset name="basic">

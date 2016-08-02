@@ -101,8 +101,6 @@ class TemplatesViewTemplates extends JViewLegacy
 			JToolbarHelper::divider();
 		}
 
-		JToolbarHelper::help('JHELP_EXTENSIONS_TEMPLATE_MANAGER_TEMPLATES');
-
 		JHtmlSidebar::setAction('index.php?option=com_templates&view=templates');
 
 		$this->sidebar = JHtmlSidebar::render();

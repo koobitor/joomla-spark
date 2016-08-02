@@ -119,8 +119,5 @@ class BannersViewBanner extends JViewLegacy
 
 			JToolbarHelper::cancel('banner.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_BANNERS_BANNERS_EDIT');
 	}
 }

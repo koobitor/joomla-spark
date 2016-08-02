@@ -64,7 +64,6 @@ class MessagesViewMessage extends JViewLegacy
 			JToolbarHelper::title(JText::_('COM_MESSAGES_WRITE_PRIVATE_MESSAGE'), 'envelope-opened new-privatemessage');
 			JToolbarHelper::save('message.save', 'COM_MESSAGES_TOOLBAR_SEND');
 			JToolbarHelper::cancel('message.cancel');
-			JToolbarHelper::help('JHELP_COMPONENTS_MESSAGING_WRITE');
 		}
 		else
 		{
@@ -77,7 +76,6 @@ class MessagesViewMessage extends JViewLegacy
 			}
 
 			JToolbarHelper::cancel('message.cancel');
-			JToolbarHelper::help('JHELP_COMPONENTS_MESSAGING_READ');
 		}
 	}
 }

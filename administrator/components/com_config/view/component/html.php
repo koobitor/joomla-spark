@@ -90,7 +90,5 @@ class ConfigViewComponentHtml extends ConfigViewCmsHtml
 		JToolbarHelper::save('config.save.component.save');
 		JToolbarHelper::divider();
 		JToolbarHelper::cancel('config.cancel.component');
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_' . $this->currentComponent . '_OPTIONS');
 	}
 }

@@ -106,7 +106,6 @@ class UsersViewLevels extends JViewLegacy
 			JToolbarHelper::divider();
 		}
 
-		JToolbarHelper::help('JHELP_USERS_ACCESS_LEVELS');
 	}
 
 	/**

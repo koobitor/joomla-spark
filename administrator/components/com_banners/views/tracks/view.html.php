@@ -101,8 +101,6 @@ class BannersViewTracks extends JViewLegacy
 			JToolbarHelper::divider();
 		}
 
-		JToolbarHelper::help('JHELP_COMPONENTS_BANNERS_TRACKS');
-
 		JHtmlSidebar::setAction('index.php?option=com_banners&view=tracks');
 	}
 
