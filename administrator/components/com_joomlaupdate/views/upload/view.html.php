@@ -30,7 +30,6 @@ class JoomlaupdateViewUpload extends JViewLegacy
 		// Set the toolbar information.
 		JToolbarHelper::title(JText::_('COM_JOOMLAUPDATE_OVERVIEW'), 'loop install');
 		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_JOOMLA_UPDATE');
 
 		// Load com_installer's language
 		$language = JFactory::getLanguage();

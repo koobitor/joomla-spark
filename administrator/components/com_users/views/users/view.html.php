@@ -136,8 +136,6 @@ class UsersViewUsers extends JViewLegacy
 			JToolbarHelper::preferences('com_users');
 			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_USERS_USER_MANAGER');
 	}
 
 	/**

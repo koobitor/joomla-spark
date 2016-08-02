@@ -114,7 +114,6 @@ class ContentViewFeatured extends JViewLegacy
 			JToolbarHelper::preferences('com_content');
 		}
 
-		JToolbarHelper::help('JHELP_CONTENT_FEATURED_ARTICLES');
 	}
 
 	/**

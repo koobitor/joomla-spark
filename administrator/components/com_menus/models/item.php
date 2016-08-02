@@ -44,18 +44,6 @@ class MenusModelItem extends JModelAdmin
 	protected $text_prefix = 'COM_MENUS_ITEM';
 
 	/**
-	 * @var        string    The help screen key for the menu item.
-	 * @since   1.6
-	 */
-	protected $helpKey = 'JHELP_MENUS_MENU_ITEM_MANAGER_EDIT';
-
-	/**
-	 * @var        string    The help screen base URL for the menu item.
-	 * @since   1.6
-	 */
-	protected $helpURL;
-
-	/**
 	 * @var        boolean    True to use local lookup for the help screen.
 	 * @since   1.6
 	 */
@@ -609,18 +597,6 @@ class MenusModelItem extends JModelAdmin
 	}
 
 	/**
-	 * Get the necessary data to load an item help screen.
-	 *
-	 * @return  object  An object with key, url, and local properties for loading the item help screen.
-	 *
-	 * @since   1.6
-	 */
-	public function getHelp()
-	{
-		return (object) array('key' => $this->helpKey, 'url' => $this->helpURL, 'local' => $this->helpLocal);
-	}
-
-	/**
 	 * Method to get a menu item.
 	 *
 	 * @param   integer  $pk  An optional id of the object to get, otherwise the id from the model state is used.
@@ -1105,8 +1081,6 @@ class MenusModelItem extends JModelAdmin
 				throw new Exception(JText::_('JERROR_LOADFILE_FAILED'));
 			}
 
-			// Get the help data from the XML file if present.
-			$help = $xml->xpath('/metadata/layout/help');
 		}
 		else
 		{
@@ -1119,19 +1093,6 @@ class MenusModelItem extends JModelAdmin
 				throw new Exception(JText::_('JERROR_LOADFILE_FAILED'));
 			}
 
-			// Get the help data from the XML file if present.
-			$help = $xml->xpath('/form/help');
-		}
-
-		if (!empty($help))
-		{
-			$helpKey = trim((string) $help[0]['key']);
-			$helpURL = trim((string) $help[0]['url']);
-			$helpLoc = trim((string) $help[0]['local']);
-
-			$this->helpKey = $helpKey ? $helpKey : $this->helpKey;
-			$this->helpURL = $helpURL ? $helpURL : $this->helpURL;
-			$this->helpLocal = (($helpLoc == 'true') || ($helpLoc == '1') || ($helpLoc == 'local')) ? true : false;
 		}
 
 		// Load the specific type file

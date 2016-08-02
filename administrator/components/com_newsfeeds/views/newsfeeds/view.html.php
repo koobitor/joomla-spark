@@ -164,7 +164,6 @@ class NewsfeedsViewNewsfeeds extends JViewLegacy
 			JToolbarHelper::preferences('com_newsfeeds');
 		}
 
-		JToolbarHelper::help('JHELP_COMPONENTS_NEWSFEEDS_FEEDS');
 	}
 
 	/**

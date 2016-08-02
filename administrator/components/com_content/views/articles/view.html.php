@@ -159,7 +159,6 @@ class ContentViewArticles extends JViewLegacy
 			JToolbarHelper::preferences('com_content');
 		}
 
-		JToolbarHelper::help('JHELP_CONTENT_ARTICLE_MANAGER');
 	}
 
 	/**

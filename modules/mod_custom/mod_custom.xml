@@ -21,7 +21,6 @@
 		<language tag="en-GB">en-GB.mod_custom.sys.ini</language>
 	</languages>
 
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CUSTOM_HTML" />
 	<config>
 		<fields name="params">
 			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">

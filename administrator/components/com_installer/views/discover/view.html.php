@@ -70,7 +70,6 @@ class InstallerViewDiscover extends InstallerViewDefault
 		JHtmlSidebar::setAction('index.php?option=com_installer&view=discover');
 
 		parent::addToolbar();
-		JToolbarHelper::help('JHELP_EXTENSIONS_EXTENSION_MANAGER_DISCOVER');
 	}
 
 	/**

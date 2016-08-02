@@ -128,10 +128,6 @@ abstract class JToolbarHelper
 	 */
 	public static function help($ref, $com = false, $override = null, $component = null)
 	{
-		$bar = JToolbar::getInstance('toolbar');
-
-		// Add a help button.
-		$bar->appendButton('Help', $ref, $com, $override, $component);
 	}
 
 	/**

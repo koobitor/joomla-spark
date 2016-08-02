@@ -19,7 +19,6 @@
 		<language tag="en-GB">en-GB.mod_menu.ini</language>
 		<language tag="en-GB">en-GB.mod_menu.sys.ini</language>
 	</languages>
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ADMIN_MENU" />
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
@@ -41,17 +40,6 @@
 					default="1"
 					label="MOD_MENU_FIELD_SHOWNEW"
 					description="MOD_MENU_FIELD_SHOWNEW_DESC">
-					<option value="0">JHIDE</option>
-					<option value="1">JSHOW</option>
-				</field>
-
-				<field
-					name="showhelp"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="MOD_MENU_FIELD_SHOWHELP"
-					description="MOD_MENU_FIELD_SHOWHELP_DESC">
 					<option value="0">JHIDE</option>
 					<option value="1">JSHOW</option>
 				</field>

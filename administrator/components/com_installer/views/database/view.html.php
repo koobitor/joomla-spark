@@ -75,6 +75,5 @@ class InstallerViewDatabase extends InstallerViewDefault
 		JToolbarHelper::custom('database.fix', 'refresh', 'refresh', 'COM_INSTALLER_TOOLBAR_DATABASE_FIX', false);
 		JToolbarHelper::divider();
 		parent::addToolbar();
-		JToolbarHelper::help('JHELP_EXTENSIONS_EXTENSION_MANAGER_DATABASE');
 	}
 }

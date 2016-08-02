@@ -33,18 +33,6 @@ class ModulesModelModule extends JModelAdmin
 	protected $text_prefix = 'COM_MODULES';
 
 	/**
-	 * @var    string  The help screen key for the module.
-	 * @since  1.6
-	 */
-	protected $helpKey = 'JHELP_EXTENSIONS_MODULE_MANAGER_EDIT';
-
-	/**
-	 * @var    string  The help screen base URL for the module.
-	 * @since  1.6
-	 */
-	protected $helpURL;
-
-	/**
 	 * Batch copy/move command. If set to false,
 	 * the batch copy/move command is not supported
 	 *
@@ -755,18 +743,6 @@ class ModulesModelModule extends JModelAdmin
 	}
 
 	/**
-	 * Get the necessary data to load an item help screen.
-	 *
-	 * @return  object  An object with key, url, and local properties for loading the item help screen.
-	 *
-	 * @since   1.6
-	 */
-	public function getHelp()
-	{
-		return (object) array('key' => $this->helpKey, 'url' => $this->helpURL);
-	}
-
-	/**
 	 * Returns a reference to the a Table object, always creating it.
 	 *
 	 * @param   string  $type    The table type to instantiate
@@ -838,17 +814,6 @@ class ModulesModelModule extends JModelAdmin
 				throw new Exception(JText::_('JERROR_LOADFILE_FAILED'));
 			}
 
-			// Get the help data from the XML file if present.
-			$help = $xml->xpath('/extension/help');
-
-			if (!empty($help))
-			{
-				$helpKey = trim((string) $help[0]['key']);
-				$helpURL = trim((string) $help[0]['url']);
-
-				$this->helpKey = $helpKey ? $helpKey : $this->helpKey;
-				$this->helpURL = $helpURL ? $helpURL : $this->helpURL;
-			}
 		}
 
 		// Load the default advanced params

@@ -89,6 +89,5 @@ class InstallerViewManage extends InstallerViewDefault
 		JHtmlSidebar::setAction('index.php?option=com_installer&view=manage');
 
 		parent::addToolbar();
-		JToolbarHelper::help('JHELP_EXTENSIONS_EXTENSION_MANAGER_MANAGE');
 	}
 }

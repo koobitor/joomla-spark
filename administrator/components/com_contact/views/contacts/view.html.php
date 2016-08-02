@@ -181,8 +181,6 @@ class ContactViewContacts extends JViewLegacy
 			JToolbarHelper::preferences('com_contact');
 		}
 
-		JToolbarHelper::help('JHELP_COMPONENTS_CONTACTS_CONTACTS');
-
 		JHtmlSidebar::setAction('index.php?option=com_contact');
 	}
 

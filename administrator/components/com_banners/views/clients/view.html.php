@@ -115,7 +115,6 @@ class BannersViewClients extends JViewLegacy
 			JToolbarHelper::preferences('com_banners');
 		}
 
-		JToolbarHelper::help('JHELP_COMPONENTS_BANNERS_CLIENTS');
 	}
 
 	/**

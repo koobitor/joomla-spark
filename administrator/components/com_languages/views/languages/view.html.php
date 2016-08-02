@@ -108,8 +108,6 @@ class LanguagesViewLanguages extends JViewLegacy
 			JToolbarHelper::divider();
 		}
 
-		JToolbarHelper::help('JHELP_EXTENSIONS_LANGUAGE_MANAGER_CONTENT');
-
 		JHtmlSidebar::setAction('index.php?option=com_languages&view=languages');
 
 	}
