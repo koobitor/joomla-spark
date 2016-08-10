@@ -275,7 +275,6 @@ class JoomlaInstallerScript
 			array('module', 'mod_menu', '', 1),
 			array('module', 'mod_popular', '', 1),
 			array('module', 'mod_quickicon', '', 1),
-			array('module', 'mod_stats_admin', '', 1),
 			array('module', 'mod_status', '', 1),
 			array('module', 'mod_submenu', '', 1),
 			array('module', 'mod_title', '', 1),
