@@ -1,2 +1,5 @@
+# IDE & System Related Files #
+.buildpath
+.editorconfig
 *
 !.gitignore
