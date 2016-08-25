@@ -436,9 +436,6 @@ class JDatabaseDriverPdomysql extends JDatabaseDriverPdo
 	/**
 	 * Method to escape a string for usage in an SQL statement.
 	 *
-	 * Oracle escaping reference:
-	 * http://www.orafaq.com/wiki/SQL_FAQ#How_does_one_escape_special_characters_when_writing_SQL_queries.3F
-	 *
 	 * SQLite escaping notes:
 	 * http://www.sqlite.org/faq.html#q14
 	 *
