@@ -322,10 +322,6 @@ class JDatabaseDriverSqlite extends JDatabaseDriverPdo
 	/**
 	 * Set the connection to use UTF-8 character encoding.
 	 *
-	 * Returns false automatically for the Oracle driver since
-	 * you can only set the character set when the connection
-	 * is created.
-	 *
 	 * @return  boolean  True on success.
 	 *
 	 * @since   12.1

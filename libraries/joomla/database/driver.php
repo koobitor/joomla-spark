@@ -36,7 +36,7 @@ abstract class JDatabaseDriver extends JDatabase implements JDatabaseInterface
 	public $name;
 
 	/**
-	 * The type of the database server family supported by this driver. Examples: mysql, oracle, postgresql, mssql,
+	 * The type of the database server family supported by this driver. Examples: mysql, postgresql, mssql,
 	 * sqlite.
 	 *
 	 * @var    string
@@ -1149,7 +1149,7 @@ abstract class JDatabaseDriver extends JDatabase implements JDatabaseInterface
 	}
 
 	/**
-	 * Get the server family type, e.g. mysql, postgresql, oracle, sqlite, mssql. If $this->serverType is not set it
+	 * Get the server family type, e.g. mysql, postgresql, sqlite, mssql. If $this->serverType is not set it
 	 * will attempt guessing the server family type from the driver name. If this is not possible the driver name will
 	 * be returned instead.
 	 *
@@ -1166,10 +1166,6 @@ abstract class JDatabaseDriver extends JDatabase implements JDatabaseInterface
 			if (stristr($name, 'mysql') !== false)
 			{
 				$this->serverType = 'mysql';
-			}
-			elseif (stristr($name, 'oracle') !== false)
-			{
-				$this->serverType = 'oracle';
 			}
 			elseif (stristr($name, 'sqlite') !== false)
 			{
