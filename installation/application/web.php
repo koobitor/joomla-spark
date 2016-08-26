@@ -457,7 +457,7 @@ final class InstallationApplicationWeb extends JApplicationCms
 				'lineend' => 'unix',
 				'tab' => '  ',
 				'language' => $lang->getTag(),
-				'direction' => $lang->isRtl() ? 'rtl' : 'ltr'
+				'direction' => $lang->isRtl() ? 'rtl' : 'ltr',
 			);
 
 			$document = JDocument::getInstance($type, $attributes);
@@ -499,7 +499,7 @@ final class InstallationApplicationWeb extends JApplicationCms
 		$options = array(
 			'name' => $name,
 			'expire' => $lifetime,
-			'force_ssl' => $this->get('force_ssl')
+			'force_ssl' => $this->get('force_ssl'),
 		);
 
 		// Instantiate the session object.
@@ -547,7 +547,7 @@ final class InstallationApplicationWeb extends JApplicationCms
 			'template' => 'template',
 			'file' => $file . '.php',
 			'directory' => JPATH_THEMES,
-			'params' => '{}'
+			'params' => '{}',
 		);
 
 		// Parse the document.
