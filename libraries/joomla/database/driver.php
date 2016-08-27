@@ -1171,10 +1171,6 @@ abstract class JDatabaseDriver extends JDatabase implements JDatabaseInterface
 			{
 				$this->serverType = 'sqlite';
 			}
-			elseif (stristr($name, 'sqlsrv') !== false)
-			{
-				$this->serverType = 'mssql';
-			}
 			elseif (stristr($name, 'mssql') !== false)
 			{
 				$this->serverType = 'mssql';
