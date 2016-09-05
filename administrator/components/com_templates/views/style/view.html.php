@@ -106,24 +106,5 @@ class TemplatesViewStyle extends JViewLegacy
 		{
 			JToolbarHelper::cancel('style.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		JToolbarHelper::divider();
-
-		// Get the help information for the template item.
-		$lang = JFactory::getLanguage();
-		$help = $this->get('Help');
-
-		if ($lang->hasKey($help->url))
-		{
-			$debug = $lang->setDebug(false);
-			$url = JText::_($help->url);
-			$lang->setDebug($debug);
-		}
-		else
-		{
-			$url = null;
-		}
-
-		JToolbarHelper::help($help->key, false, $url);
 	}
 }

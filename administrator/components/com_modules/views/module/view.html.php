@@ -101,23 +101,5 @@ class ModulesViewModule extends JViewLegacy
 
 			JToolbarHelper::cancel('module.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		// Get the help information for the menu item.
-		$lang = JFactory::getLanguage();
-
-		$help = $this->get('Help');
-
-		if ($lang->hasKey($help->url))
-		{
-			$debug = $lang->setDebug(false);
-			$url = JText::_($help->url);
-			$lang->setDebug($debug);
-		}
-		else
-		{
-			$url = null;
-		}
-
-		JToolbarHelper::help($help->key, false, $url);
 	}
 }

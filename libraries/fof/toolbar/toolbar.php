@@ -845,22 +845,6 @@ class FOFToolbar
 				JToolbarHelper::preview($url, $update_editors);
 				break;
 
-			case 'help':
-				if (!isset($attributes['help']))
-				{
-					throw new InvalidArgumentException(
-						'The help attribute is missing in the help button type.'
-					);
-				}
-
-				$ref = $attributes['help'];
-				$com = isset($attributes['com']) ? FOFStringUtils::toBool($attributes['com']) : false;
-				$override = isset($attributes['override']) ? $attributes['override'] : null;
-				$component = isset($attributes['component']) ? $attributes['component'] : null;
-
-				JToolbarHelper::help($ref, $com, $override, $component);
-				break;
-
 			case 'back':
 				$alt = isset($attributes['alt']) ? $attributes['alt'] : 'JTOOLBAR_BACK';
 				$href = isset($attributes['href']) ? $attributes['href'] : 'javascript:history.back();';
