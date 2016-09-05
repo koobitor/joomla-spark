@@ -8,8 +8,6 @@
 
 defined('_JEXEC') or die;
 
-$doc = JFactory::getDocument();
-
 // Add Stylesheets
 JHtml::_('bootstrap.loadCss', true, $this->direction);
 JHtml::_('stylesheet', 'installation/template/css/template.css');
@@ -34,11 +32,11 @@ JText::script('INSTL_FTP_SETTINGS_CORRECT');
 		<![endif]-->
 		<script type="text/javascript">
 			jQuery(function()
-			{	// Delay instantiation after document.formvalidation and other dependencies loaded
+			{
+				// Delay instantiation after document.formvalidation and other dependencies loaded
 				window.setTimeout(function(){
 					window.Install = new Installation('container-installation', '<?php echo JUri::current(); ?>');
 			   	}, 500);
-
 			});
 		</script>
 	</head>
@@ -48,19 +46,14 @@ JText::script('INSTL_FTP_SETTINGS_CORRECT');
 			<img src="<?php echo $this->baseurl ?>/template/images/joomla.png" alt="Joomla" />
 			<hr />
 			<h5>
-				<?php
-				// Fix wrong display of Joomla!® in RTL language
-				if (JFactory::getLanguage()->isRtl())
-				{
-					$joomla = '<a href="https://www.joomla.org" target="_blank">Joomla!</a><sup>&#174;&#x200E;</sup>';
-				}
-				else
-				{
-					$joomla = '<a href="https://www.joomla.org" target="_blank">Joomla!</a><sup>&#174;</sup>';
-				}
-				$license = '<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank">' . JText::_('INSTL_GNU_GPL_LICENSE') . '</a>';
-				echo JText::sprintf('JGLOBAL_ISFREESOFTWARE', $joomla, $license);
-				?>
+				<?php // Fix wrong display of Joomla!® in RTL language ?>
+				<?php if (JFactory::getLanguage()->isRtl()) : ?>
+					<?php $joomla = '<a href="https://www.joomla.org" target="_blank">Joomla!</a><sup>&#174;&#x200E;</sup>'; ?>
+				<?php else : ?>
+					<?php $joomla = '<a href="https://www.joomla.org" target="_blank">Joomla!</a><sup>&#174;</sup>'; ?>
+				<?php endif; ?>
+				<?php $license = '<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank">' . JText::_('INSTL_GNU_GPL_LICENSE') . '</a>'; ?>
+				<?php echo JText::sprintf('JGLOBAL_ISFREESOFTWARE', $joomla, $license); ?>
 			</h5>
 		</div>
 		<!-- Container -->
@@ -92,6 +85,15 @@ JText::script('INSTL_FTP_SETTINGS_CORRECT');
 
 					// Turn radios into btn-group
 				    $('.radio.btn-group label').addClass('btn');
+
+					$('fieldset.btn-group').each(function() {
+						// Handle disabled, prevent clicks on the container, and add disabled style to each button
+						if ($(this).prop('disabled')) {
+							$(this).css('pointer-events', 'none').off('click');
+							$(this).find('.btn').addClass('disabled');
+						}
+					});
+
 				    $(".btn-group label:not(.active)").click(function()
 					{
 				        var label = $(this);
@@ -128,5 +130,6 @@ JText::script('INSTL_FTP_SETTINGS_CORRECT');
 			}
 			initElements();
 		</script>
+
 	</body>
 </html>

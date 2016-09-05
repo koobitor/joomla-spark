@@ -1,8 +1,9 @@
 <?php
 /**
- * @package		Joomla.Installation
- * @copyright	Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @package    Joomla.Installation
+ *
+ * @copyright  Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
+ * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
@@ -160,7 +161,7 @@ Mongolian (mn-MN) - Mongolian Translation Team, Altansukh T.
 Norwegian Bokmål (nb-NO) - Joomla! i Norge - Rune Rasmussen, Roar Jystad, Jens-Christian Skibakk
 Norwegian Nynorsk (nn-NO) - Joomla! i Norge - Toyni Tobekk (based on nb-NO translations)
 Persian (fa-IR) - Persian Translation Team - Mohsen Firoozmandan, Joomla Farsi Team
-Polish (pl-PL) - Polskie Centrum Joomla! 
+Polish (pl-PL) - Polskie Centrum Joomla!
 Portuguese (pt-BR) - Joomla! Brasil
 Portuguese (pt-PT) - Comunidade Joomla! Portugal - Paulo Izidoro
 Romanian (ro-RO) - Romanian Joomla! Community - Horia Negura, Lavinia Negura

@@ -9,7 +9,8 @@
 
 defined('_JEXEC') or die;
 
-// Initiasile related data.
+// Initialise related data.
+JLoader::register('MenusHelper', JPATH_ADMINISTRATOR . '/components/com_menus/helpers/menus.php');
 require_once JPATH_ADMINISTRATOR . '/components/com_menus/helpers/menus.php';
 $menuTypes = MenusHelper::getMenuLinks();
 

@@ -47,7 +47,6 @@
 			label="JCATEGORY"
 			   description="JFIELD_CATEGORY_DESC"
 			required="true"
-			   allowAdd="true"
 			   default=""
 		>
 		</field>
@@ -578,7 +577,7 @@
 				label="JGLOBAL_SHOW_EMAIL_ICON_LABEL"
 				description="JGLOBAL_SHOW_EMAIL_ICON_DESC">
 			</field>
-			
+
 			<field
 				name="show_hits"
 				type="hidden"

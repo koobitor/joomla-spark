@@ -9,7 +9,7 @@
 
 defined('_JEXEC') or die;
 
-/** 
+/**
  * JHtml module helper class.
  *
  * @since  1.6
@@ -136,7 +136,8 @@ abstract class JHtmlModules
 
 	public static function positions($clientId, $state = 1, $selectedPosition = '')
 	{
-		require_once JPATH_ADMINISTRATOR . '/components/com_templates/helpers/templates.php';
+		JLoader::register('TemplatesHelper', JPATH_ADMINISTRATOR . '/components/com_templates/helpers/templates.php');
+
 		$templates      = array_keys(ModulesHelper::getTemplates($clientId, $state));
 		$templateGroups = array();
 

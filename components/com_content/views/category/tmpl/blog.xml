@@ -153,7 +153,7 @@
 		</fieldset>
 
 		<fieldset name="advanced" label="JGLOBAL_BLOG_LAYOUT_OPTIONS">
-				<field 
+				<field
 					name="bloglayout"
 					type="spacer"
 					class="text"
@@ -202,13 +202,6 @@
 					<option value="0">JGLOBAL_DOWN</option>
 					<option value="1">JGLOBAL_ACROSS</option>
 				</field>
-
-				<field
-					name="subcategories"
-					type="spacer"
-					class="spacer"
-					label="JGLOBAL_SUBSLIDER_BLOG_EXTENDED_LABEL"
-				/>
 
 				<field
 					name="show_subcategory_content"
