@@ -15,7 +15,6 @@
 	<update>
 		<schemas>
 			<schemapath type="mysql">administrator/components/com_admin/sql/updates/mysql</schemapath>
-			<schemapath type="sqlsrv">administrator/components/com_admin/sql/updates/sqlsrv</schemapath>
 		</schemas>
 	</update>
 
