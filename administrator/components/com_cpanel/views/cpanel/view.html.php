@@ -34,7 +34,6 @@ class CpanelViewCpanel extends JViewLegacy
 	{
 		// Set toolbar items for the page
 		JToolbarHelper::title(JText::_('COM_CPANEL'), 'home-2 cpanel');
-		JToolbarHelper::help('screen.cpanel');
 
 		$input = JFactory::getApplication()->input;
 
